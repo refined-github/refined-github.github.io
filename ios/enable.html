@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iOS Safari Extension Guide</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            min-height: 100vh;
+        }
+        .content {
+            padding: 20px;
+            max-width: 70%;
+        }
+        .logo {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+        .instructions {
+            font-size: 14px;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+        .instructions li {
+            margin-bottom: 5px;
+        }
+        .arrow {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800" class="arrow">
+        <defs>
+            <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+                <polygon points="0 0, 10 3.5, 0 7" />
+            </marker>
+        </defs>
+        <path d="M150 200 Q 50 400, 50 750" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrowhead)" />
+    </svg>
+    <div class="content">
+        <img src="https://github.com/refined-github/refined-github/blob/main/media/icon.png?raw=true" alt="Refined GitHub" class="logo" width="32">
+        <ol class="instructions">
+            <li>To enable the extension, tap this icon</li>
+            <li>Select "Manage Extensions"</li>
+        </ol>
+    </div>
+</body>
+</html>
