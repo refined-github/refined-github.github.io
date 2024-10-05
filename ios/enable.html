@@ -41,8 +41,8 @@
             fill: currentColor;
         }
 
-        /* Show on top on iPad */
-        @media screen and (min-device-width : 768px) {
+        /* Show on top on iPad or iPhone landscape */
+        @media screen and (min-device-width: 768px), (orientation: landscape) {
                 .content {
                     margin-top: 20px;
                     min-width: 45vw;
